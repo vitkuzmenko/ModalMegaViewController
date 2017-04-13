@@ -1,0 +1,15 @@
+PODS:
+  - PureLayout (3.0.2)
+  - Swiftex (0.0.10)
+
+DEPENDENCIES:
+  - PureLayout
+  - Swiftex
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Swiftex: 3ce471a861d7064a6cdf0e09ae06740959878d11
+
+PODFILE CHECKSUM: bca41f25db9a4ff361c9307656c7fd5abf1469be
+
+COCOAPODS: 1.2.0

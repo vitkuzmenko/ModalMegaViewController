@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79A5591C1E9F77DD000287B7 /* ModalMegaChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A559191E9F77DD000287B7 /* ModalMegaChildViewController.swift */; };
+		79A5591D1E9F77DD000287B7 /* ModalMegaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5591A1E9F77DD000287B7 /* ModalMegaNavigationController.swift */; };
+		79A5591E1E9F77DD000287B7 /* ModalMegaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5591B1E9F77DD000287B7 /* ModalMegaViewController.swift */; };
+		79A559201E9F7840000287B7 /* ModalMegaViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 79A5591F1E9F7840000287B7 /* ModalMegaViewController.podspec */; };
+		79C455D61E9F76FB0034822F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C455D51E9F76FB0034822F /* AppDelegate.swift */; };
+		79C455D81E9F76FB0034822F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C455D71E9F76FB0034822F /* ViewController.swift */; };
+		79C455DB1E9F76FB0034822F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C455D91E9F76FB0034822F /* Main.storyboard */; };
+		79C455DD1E9F76FB0034822F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C455DC1E9F76FB0034822F /* Assets.xcassets */; };
+		79C455E01E9F76FB0034822F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C455DE1E9F76FB0034822F /* LaunchScreen.storyboard */; };
+		9360F53CE4BA4C1D0D8E04FB /* Pods_ModalMega.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BD609133E387587F025126 /* Pods_ModalMega.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32BD609133E387587F025126 /* Pods_ModalMega.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModalMega.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8D9048DDAD28E265629010 /* Pods-ModalMega.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModalMega.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModalMega/Pods-ModalMega.debug.xcconfig"; sourceTree = "<group>"; };
+		5090DA07D0D956027E7489C2 /* Pods-ModalMega.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModalMega.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModalMega/Pods-ModalMega.release.xcconfig"; sourceTree = "<group>"; };
+		79A559191E9F77DD000287B7 /* ModalMegaChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalMegaChildViewController.swift; sourceTree = "<group>"; };
+		79A5591A1E9F77DD000287B7 /* ModalMegaNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalMegaNavigationController.swift; sourceTree = "<group>"; };
+		79A5591B1E9F77DD000287B7 /* ModalMegaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalMegaViewController.swift; sourceTree = "<group>"; };
+		79A5591F1E9F7840000287B7 /* ModalMegaViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ModalMegaViewController.podspec; path = ../ModalMegaViewController.podspec; sourceTree = "<group>"; };
+		79C455D21E9F76FB0034822F /* ModalMega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalMega.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C455D51E9F76FB0034822F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79C455D71E9F76FB0034822F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79C455DA1E9F76FB0034822F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79C455DC1E9F76FB0034822F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79C455DF1E9F76FB0034822F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79C455E11E9F76FB0034822F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79C455CF1E9F76FB0034822F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9360F53CE4BA4C1D0D8E04FB /* Pods_ModalMega.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5140534CF36D0A866CAF073C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D8D9048DDAD28E265629010 /* Pods-ModalMega.debug.xcconfig */,
+				5090DA07D0D956027E7489C2 /* Pods-ModalMega.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79A559181E9F77DD000287B7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				79A559191E9F77DD000287B7 /* ModalMegaChildViewController.swift */,
+				79A5591A1E9F77DD000287B7 /* ModalMegaNavigationController.swift */,
+				79A5591B1E9F77DD000287B7 /* ModalMegaViewController.swift */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		79C455C91E9F76FB0034822F = {
+			isa = PBXGroup;
+			children = (
+				79A5591F1E9F7840000287B7 /* ModalMegaViewController.podspec */,
+				79C455D41E9F76FB0034822F /* ModalMega */,
+				79C455D31E9F76FB0034822F /* Products */,
+				5140534CF36D0A866CAF073C /* Pods */,
+				E6F847B391F6B9D3A27B3DE0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79C455D31E9F76FB0034822F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79C455D21E9F76FB0034822F /* ModalMega.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79C455D41E9F76FB0034822F /* ModalMega */ = {
+			isa = PBXGroup;
+			children = (
+				79C455D51E9F76FB0034822F /* AppDelegate.swift */,
+				79C455D71E9F76FB0034822F /* ViewController.swift */,
+				79C455D91E9F76FB0034822F /* Main.storyboard */,
+				79C455DC1E9F76FB0034822F /* Assets.xcassets */,
+				79C455DE1E9F76FB0034822F /* LaunchScreen.storyboard */,
+				79A559181E9F77DD000287B7 /* Source */,
+				79C455E11E9F76FB0034822F /* Info.plist */,
+			);
+			path = ModalMega;
+			sourceTree = "<group>";
+		};
+		E6F847B391F6B9D3A27B3DE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32BD609133E387587F025126 /* Pods_ModalMega.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79C455D11E9F76FB0034822F /* ModalMega */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79C455E41E9F76FB0034822F /* Build configuration list for PBXNativeTarget "ModalMega" */;
+			buildPhases = (
+				F792E6C934F476CDE86676F6 /* [CP] Check Pods Manifest.lock */,
+				79C455CE1E9F76FB0034822F /* Sources */,
+				79C455CF1E9F76FB0034822F /* Frameworks */,
+				79C455D01E9F76FB0034822F /* Resources */,
+				3856E31DADCDA20DE61F05C1 /* [CP] Embed Pods Frameworks */,
+				44587F164B81A50DA7E0778B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalMega;
+			productName = ModalMega;
+			productReference = 79C455D21E9F76FB0034822F /* ModalMega.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79C455CA1E9F76FB0034822F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = KuzmenkoFamly;
+				TargetAttributes = {
+					79C455D11E9F76FB0034822F = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 79C455CD1E9F76FB0034822F /* Build configuration list for PBXProject "ModalMega" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79C455C91E9F76FB0034822F;
+			productRefGroup = 79C455D31E9F76FB0034822F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79C455D11E9F76FB0034822F /* ModalMega */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79C455D01E9F76FB0034822F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C455E01E9F76FB0034822F /* LaunchScreen.storyboard in Resources */,
+				79A559201E9F7840000287B7 /* ModalMegaViewController.podspec in Resources */,
+				79C455DD1E9F76FB0034822F /* Assets.xcassets in Resources */,
+				79C455DB1E9F76FB0034822F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3856E31DADCDA20DE61F05C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModalMega/Pods-ModalMega-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44587F164B81A50DA7E0778B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModalMega/Pods-ModalMega-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F792E6C934F476CDE86676F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79C455CE1E9F76FB0034822F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C455D81E9F76FB0034822F /* ViewController.swift in Sources */,
+				79A5591D1E9F77DD000287B7 /* ModalMegaNavigationController.swift in Sources */,
+				79A5591C1E9F77DD000287B7 /* ModalMegaChildViewController.swift in Sources */,
+				79C455D61E9F76FB0034822F /* AppDelegate.swift in Sources */,
+				79A5591E1E9F77DD000287B7 /* ModalMegaViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79C455D91E9F76FB0034822F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79C455DA1E9F76FB0034822F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79C455DE1E9F76FB0034822F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79C455DF1E9F76FB0034822F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79C455E21E9F76FB0034822F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79C455E31E9F76FB0034822F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79C455E51E9F76FB0034822F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8D9048DDAD28E265629010 /* Pods-ModalMega.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ModalMega/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.kuzmenko.ModalMega;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		79C455E61E9F76FB0034822F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5090DA07D0D956027E7489C2 /* Pods-ModalMega.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ModalMega/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.kuzmenko.ModalMega;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79C455CD1E9F76FB0034822F /* Build configuration list for PBXProject "ModalMega" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C455E21E9F76FB0034822F /* Debug */,
+				79C455E31E9F76FB0034822F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79C455E41E9F76FB0034822F /* Build configuration list for PBXNativeTarget "ModalMega" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79C455E51E9F76FB0034822F /* Debug */,
+				79C455E61E9F76FB0034822F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79C455CA1E9F76FB0034822F /* Project object */;
+}

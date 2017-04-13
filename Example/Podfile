@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+def ui_pods
+    pod 'PureLayout'
+    pod 'Swiftex'
+end
+
+target 'ModalMega' do
+    ui_pods
+end
