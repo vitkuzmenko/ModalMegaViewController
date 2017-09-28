@@ -4,12 +4,21 @@ PODS:
 
 DEPENDENCIES:
   - PureLayout
-  - Swiftex
+  - Swiftex (from `https://github.com/vitkuzmenko/Swiftex`)
+
+EXTERNAL SOURCES:
+  Swiftex:
+    :git: https://github.com/vitkuzmenko/Swiftex
+
+CHECKOUT OPTIONS:
+  Swiftex:
+    :commit: a07131f9a5c53b2fda9d7bed93b458879f2d28bb
+    :git: https://github.com/vitkuzmenko/Swiftex
 
 SPEC CHECKSUMS:
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
-  Swiftex: 3ce471a861d7064a6cdf0e09ae06740959878d11
+  Swiftex: b8e7d2487ebdde04b340b1d7e9d7bd84ce4528bd
 
-PODFILE CHECKSUM: bca41f25db9a4ff361c9307656c7fd5abf1469be
+PODFILE CHECKSUM: 7ffeb7da833239e6c93ef99d10cce1f6eed3fc68
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1

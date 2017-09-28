@@ -4,7 +4,7 @@ use_frameworks!
 
 def ui_pods
     pod 'PureLayout'
-    pod 'Swiftex'
+    pod 'Swiftex', :git => 'https://github.com/vitkuzmenko/Swiftex'
 end
 
 target 'ModalMega' do

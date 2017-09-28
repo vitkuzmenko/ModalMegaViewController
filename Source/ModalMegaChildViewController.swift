@@ -81,12 +81,12 @@ open class ModalMegaChildViewController: UIViewController {
     
     // MARK: - Keyboard
     
-    func keyboardWillShow(notification: Notification) {
+    @objc func keyboardWillShow(notification: Notification) {
         guard let nInfo = notification.userInfo as? [String: Any], let value = nInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue else { return }
         keyboardWillShow(frame: value.cgRectValue)
     }
     
-    func keyboardWillHide(notification: Notification) {
+    @objc func keyboardWillHide(notification: Notification) {
         guard let nInfo = notification.userInfo as? [String: Any], let value = nInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue else { return }
         keyboardWillHide(frame: value.cgRectValue)
     }

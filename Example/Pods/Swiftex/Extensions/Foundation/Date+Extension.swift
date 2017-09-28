@@ -30,7 +30,7 @@ public func >(lhs: Date, rhs: Date) -> Bool {
 
 extension Date {
     
-    public var ISO8601String: String? {
+    public var ISO8601String: String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
@@ -57,7 +57,7 @@ extension Date {
     
     public static func date(components: DateComponents) -> Date? {
         var calendar = Calendar.current
-        calendar.timeZone = TimeZone(abbreviation: "MSK")!
+        calendar.timeZone = TimeZone(identifier: "UTC")!
         calendar.locale = Locale.current
         return calendar.date(from: components)
     }
@@ -70,56 +70,11 @@ extension Date {
         return Date.date(components: dateComponents)
     }
     
-}
-
-extension Date {
-    
-    public var currentCalendar: Calendar {
-        return Calendar.current
-    }
-    
-    public var calendarComponents: NSCalendar.Unit {
-        return (NSCalendar.Unit.second.union(NSCalendar.Unit.minute).union(NSCalendar.Unit.hour).union(NSCalendar.Unit.day).union(NSCalendar.Unit.weekday).union(NSCalendar.Unit.weekOfMonth).union(NSCalendar.Unit.month).union(NSCalendar.Unit.year))
-    }
-    
-    public var components: DateComponents {
-        return (currentCalendar as NSCalendar).components(calendarComponents, from: self)
-    }
-    
-    public var seconds: Int {
-        return components.second!
-    }
-    
-    public var minutes: Int {
-        return components.minute!
-    }
-    
-    public var hours: Int {
-        return components.hour!
-    }
-    
-    public var day: Int {
-        return components.day!
-    }
-    
-    public var month: Int {
-        return components.month!
-    }
-    
-    public var year: Int {
-        return components.year!
-    }
-    
-    public var minYear: Int {
-        return components.year! % 100
-    }
-    
-    public var time: String {
-        return String(format: "%02d:%02d", hours, minutes)
-    }
-
-    public var isToday: Bool {
-        return self.isSame(date: Date())
+    public func string(dateStyle: DateFormatter.Style, timeStyle: DateFormatter.Style) -> String {
+        let df = DateFormatter()
+        df.dateStyle = dateStyle
+        df.timeStyle = timeStyle
+        return df.string(from: self)
     }
     
 }

@@ -141,7 +141,7 @@ open class ModalMegaViewController: UIViewController {
         }
     }
     
-    func tapBackdrop() {
+    @objc func tapBackdrop() {
         self._dismiss(animated: true)
     }
     
