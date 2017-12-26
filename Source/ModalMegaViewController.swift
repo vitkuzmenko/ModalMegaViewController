@@ -9,7 +9,7 @@
 import UIKit
 
 open class ModalMegaViewController: UIViewController {
-
+    
     var backdropView: UIView!
     
     var shadowView: UIView!
@@ -49,10 +49,10 @@ open class ModalMegaViewController: UIViewController {
     required public init?(coder aDecoder: NSCoder) {
         fatalError("you can not use modal view controller in storyboard or nib")
     }
-   
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureViews()
         
         configureRootViewController()
@@ -104,7 +104,7 @@ open class ModalMegaViewController: UIViewController {
         if isVisualEffect {
             backdropView.autoPinEdge(.bottom, to: .top, of: holderView, withOffset: cornerRadius, relation: .equal)
         } else {
-            backdropView.autoPinEdge(toSuperviewMargin: .bottom)
+            backdropView.autoPinEdge(toSuperviewEdge: .bottom)
         }
         
         if isBackdropDissmissable {
@@ -151,5 +151,6 @@ open class ModalMegaViewController: UIViewController {
             self.dismiss(animated: flag, completion: completion)
         }
     }
-
+    
 }
+

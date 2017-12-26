@@ -9,7 +9,7 @@
 import UIKit
 
 open class ModalMegaChildViewController: UIViewController {
-
+    
     @IBOutlet open var cancelButton: UIBarButtonItem!
     
     open weak var modalMegaViewController: ModalMegaViewController!
@@ -51,9 +51,18 @@ open class ModalMegaChildViewController: UIViewController {
     }
     
     func set(height: CGFloat, animated: Bool, complete: (() -> Void)? = nil) {
-        modalMegaViewController?.heightConstraint.constant = min(height, maxHeight)
+        
+        let space: CGFloat
+        
+        if #available(iOS 11.0, *) {
+            space = view.safeAreaInsets.bottom
+        } else {
+            space = bottomLayoutGuide.length
+        }
+        
+        modalMegaViewController?.heightConstraint.constant = min(height + space, maxHeight)
         if animated {
-            UIView.animate(withDuration: 0.3, animations: { 
+            UIView.animate(withDuration: 0.3, animations: {
                 self.modalMegaViewController?.view.layoutIfNeeded()
             }) { f in
                 complete?()
@@ -109,5 +118,6 @@ open class ModalMegaChildViewController: UIViewController {
         set(height: preferredContentHeight, animated: false)
         modalMegaViewController.view.layoutIfNeeded()
     }
-
+    
 }
+
