@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 KuzmenkoFamily. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+//#if os(iOS) || os(watchOS)
 
 import UIKit
 
@@ -24,7 +24,7 @@ extension UIImage {
         newImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        let data = UIImageJPEGRepresentation(newImage, 0.9)
+        let data = newImage.jpegData(compressionQuality: 0.9)
         let newI = UIImage(data: data!, scale: UIScreen.main.scale)
         
         return newI!
@@ -53,4 +53,5 @@ extension UIImage {
 
 }
 
-#endif
+// #endif
+

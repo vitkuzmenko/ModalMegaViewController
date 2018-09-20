@@ -14,7 +14,7 @@ open class ModalMegaViewController: UIViewController {
     
     var shadowView: UIView!
     
-    var holderView: UIView!
+    public var holderView: UIView!
     
     var heightConstraint: NSLayoutConstraint!
     

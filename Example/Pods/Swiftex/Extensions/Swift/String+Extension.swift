@@ -144,22 +144,22 @@ extension String {
             let pattern = "<a\\b.*?<\\/a>"
             let reg = try NSRegularExpression(pattern: pattern, options: .caseInsensitive)
             let result = reg.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "")
-            return result.length > 0 ? result : nil
+            return result.count > 0 ? result : nil
         } catch _ {
             return self
         }
     }
     
     public var first: String {
-        return String(characters.prefix(1))
+        return String(prefix(1))
     }
     
     public var last: String {
-        return String(characters.suffix(1))
+        return String(suffix(1))
     }
     
     public var uppercaseFirst: String {
-        return first.uppercased() + String(characters.dropFirst())
+        return first.uppercased() + String(dropFirst())
     }
     
     public func truncate(length: Int, trailing: String? = nil) -> String {
@@ -173,8 +173,9 @@ extension String {
 
 extension String {
     
+    @available(*, deprecated, message: "use count")
     public var length: Int {
-        return self.characters.count
+        return self.count
     }
     
 }
@@ -188,6 +189,21 @@ public extension String {
         return nil
     }
     
+    public func matches(for regex: String) -> [[String]] {
+        do {
+            let regEx = try NSRegularExpression(pattern: regex, options: [])
+            let matches = regEx.matches(in: self, range: NSRange(location: 0, length: self.count))
+            return matches.map {
+                var array: [String] = []
+                for rangeIndex in 0...max(0, $0.numberOfRanges - 1) {
+                    array.append(String(self[Range($0.range(at: rangeIndex), in: self)!]))
+                }
+                return array
+            }
+        } catch _ { }
+        return []
+    }
+    
 }
 
 /**
@@ -199,7 +215,7 @@ extension String {
     
     public func size(font: UIFont) -> CGSize {
         let originalString = self as NSString
-        return originalString.size(withAttributes: [NSAttributedStringKey.font: font])
+        return originalString.size(withAttributes: [NSAttributedString.Key.font: font])
     }
     
     public func width(font: UIFont) -> CGFloat {
@@ -210,7 +226,7 @@ extension String {
         
         let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
         
-        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         
         return ceil(boundingBox.height) + 1
         

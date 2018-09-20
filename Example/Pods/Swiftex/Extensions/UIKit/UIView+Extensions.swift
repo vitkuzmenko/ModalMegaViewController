@@ -6,11 +6,16 @@
 //  Copyright © 2016 KuzmenkoFamily. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+//#if os(iOS) || os(watchOS)
 
 import UIKit
 
 extension UIView {
+    
+    @IBInspectable public var cornerRadius: CGFloat {
+        get { return layer.cornerRadius }
+        set { layer.cornerRadius = newValue }
+    }
     
     public func shake(scale: CGFloat = 0.8, _ completion: (() -> Void)? = nil) {
         UIView.animate(withDuration: 0.1, animations: { () -> Void in
@@ -19,7 +24,7 @@ extension UIView {
             delay(0.3, closure: { () -> Void in
                 completion?()
             })
-            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 5, options: UIView.AnimationOptions.curveEaseOut, animations: { () -> Void in
                 self.transform = CGAffineTransform(scaleX: 1, y: 1)
             }) { (finished: Bool) -> Void in
                 
@@ -31,7 +36,7 @@ extension UIView {
         UIView.animate(withDuration: 0.05, animations: { () -> Void in
             self.transform = CGAffineTransform(translationX: 10, y: 0)
         }, completion: { (f) -> Void in
-            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.7, options: UIViewAnimationOptions.allowUserInteraction, animations: { () -> Void in
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.7, options: UIView.AnimationOptions.allowUserInteraction, animations: { () -> Void in
                 self.transform = .identity
             }, completion: complete)
         })
@@ -39,5 +44,5 @@ extension UIView {
     
 }
 
-#endif
+//#endif
 

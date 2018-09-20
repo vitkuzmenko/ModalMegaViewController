@@ -25,8 +25,8 @@ open class ModalMegaChildViewController: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     deinit {
@@ -91,12 +91,12 @@ open class ModalMegaChildViewController: UIViewController {
     // MARK: - Keyboard
     
     @objc func keyboardWillShow(notification: Notification) {
-        guard let nInfo = notification.userInfo as? [String: Any], let value = nInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue else { return }
+        guard let nInfo = notification.userInfo as? [String: Any], let value = nInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
         keyboardWillShow(frame: value.cgRectValue)
     }
     
     @objc func keyboardWillHide(notification: Notification) {
-        guard let nInfo = notification.userInfo as? [String: Any], let value = nInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue else { return }
+        guard let nInfo = notification.userInfo as? [String: Any], let value = nInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
         keyboardWillHide(frame: value.cgRectValue)
     }
     

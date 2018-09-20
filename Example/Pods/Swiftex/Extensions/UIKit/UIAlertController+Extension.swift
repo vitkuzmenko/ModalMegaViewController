@@ -6,13 +6,13 @@
 //  Copyright © 2017 KuzmenkoFamily. All rights reserved.
 //
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+// #if os(iOS) || os(watchOS)
 
 import UIKit
 
 extension UIAlertController {
     
-    public func addAction(title: String, style: UIAlertActionStyle = .default, enabled: Bool = true, handler: ((UIAlertAction) -> Void)?) {
+    public func addAction(title: String, style: UIAlertAction.Style = .default, enabled: Bool = true, handler: ((UIAlertAction) -> Void)?) {
         let action = UIAlertAction(title: title, style: style, handler: handler)
         if enabled {
             self.addAction(action)
@@ -31,4 +31,5 @@ extension UIAlertController {
     
 }
 
-#endif
+// #endif
+

@@ -121,7 +121,6 @@
 				79C455CF1E9F76FB0034822F /* Frameworks */,
 				79C455D01E9F76FB0034822F /* Resources */,
 				3856E31DADCDA20DE61F05C1 /* [CP] Embed Pods Frameworks */,
-				44587F164B81A50DA7E0778B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,7 +143,7 @@
 				TargetAttributes = {
 					79C455D11E9F76FB0034822F = {
 						CreatedOnToolsVersion = 8.3;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,21 +199,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModalMega/Pods-ModalMega-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		44587F164B81A50DA7E0778B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModalMega/Pods-ModalMega-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F792E6C934F476CDE86676F6 /* [CP] Check Pods Manifest.lock */ = {
@@ -388,8 +372,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.kuzmenko.ModalMega;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -402,8 +385,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.kuzmenko.ModalMega;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
